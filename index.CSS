@@ -1,0 +1,470 @@
+*{
+    box-sizing: border-box;
+}
+html {
+    scroll-behavior: smooth;
+}
+body {
+    font-family: 'Roboto',sans-serif;
+    margin: 0;  
+}
+
+
+h1 {font-size: 2.5em;}
+h2 {font-size: 2.5em;}
+h3 {font-size: 2em;}
+p {font-size: 1.25em;}
+ul {list-style: none;}
+li {font-size: 1.25em;}
+
+
+
+.container{
+    max-width: 1400px;
+    margin: auto;
+}
+.color-acento {color: blue;}
+
+.color-SCRUM {color: rgb(255, 255, 255);}
+
+header {
+
+    background-color: rgba(255, 255, 245);
+}
+
+header .logo {
+    margin: 0;
+    padding: 10px 30px;
+    font-weight: bold;
+    color: rgb(1, 36, 36);
+    font-size: 2.6em;
+
+}
+
+header .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+header nav {
+
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 25px;
+}
+
+header a {
+    padding: 5px 12px;
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+}
+header a:hover {
+    color: rgb(222, 222, 222);
+}
+#hero {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 90vh;
+    color: rgb(255, 255, 235);
+    background-image: linear-gradient(
+    0deg,
+    rgba(0, 0, 0, 0.5),
+    rgba(26, 22, 153, 0.5)
+),
+url("Media/Fondo2.jpg");
+
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+#hero h1 {
+    color: white;
+}
+
+#aboutme .container {
+
+    text-align:  center;
+    padding: 200px 12px;
+
+}
+
+
+#education {
+background-color: rgb(25, 24, 26);
+color: rgb(255, 255, 255);
+text-align: center;
+}
+#education .container {
+    margin-top: 20px;
+    padding: 40px 12px;
+}
+#education h2{
+
+    margin-top: 0;
+    font-size: 2.8em;
+
+}
+
+#education p {
+
+    display: none;
+
+}
+
+#education .card-education {
+    max-width: 400px;
+    object-fit: contain;
+    background-position: center center;
+background-size: cover;
+    padding: 50px 0px;
+    margin: 20px;
+    border-radius: 15px;
+
+}
+
+
+.card-education:first-child{
+    background-image: linear-gradient(
+    0deg,
+    rgba(0, 0, 0, 0.5),
+    rgba(0, 0, 0, 0.5)
+),
+url("Media/Highschool.jpg");
+
+}
+
+
+.card-education:nth-child(2){
+    background-image: linear-gradient(
+    0deg,
+    rgba(0, 0, 0, 0.5),
+    rgba(0, 0, 0, 0.5)
+),
+url("Media/SCRUM.jpg");
+
+}
+
+
+.card-education:nth-child(3) {
+    background-image: linear-gradient(
+    0deg,
+    rgba(0, 0, 0, 0.5),
+    rgba(0, 0, 0, 0.5)
+),
+url("Media/University.jpg");
+
+}
+
+
+
+#skill {
+    background-color: rgb(255, 255, 245);
+    color: rgb(255, 255, 255);
+    text-align: center;
+    }
+    #skill .container {
+        margin-top: 20px;
+        padding: 50px 12px;
+    }
+    #skill h2{
+        color: black;
+        margin-top: 0;
+        font-size: 2.8em;
+    
+    }
+    
+    #skill p {
+    
+        display: none;
+    
+    }
+    
+    #skill .card-skill {
+        max-width: 400px;
+        object-fit: contain;
+        background-position: center center;
+    background-size: cover;
+        padding: 50px 0px;
+        margin: 20px;
+        border-radius: 15px;
+    
+    }
+    
+    
+    .card-skill:first-child{
+        background-image: linear-gradient(
+        0deg,
+        rgba(0, 0, 0, 0.5),
+        rgba(0, 0, 0, 0.5)
+    ),
+    url("Media/C.jpg");
+    
+    }
+    
+    
+    .card-skill:nth-child(2){
+        background-image: linear-gradient(
+        0deg,
+        rgba(0, 0, 0, 0.5),
+        rgba(0, 0, 0, 0.5)
+    ),
+    url("Media/JS.jpg");
+    
+    }
+    
+    
+    .card-skill:nth-child(3) {
+        background-image: linear-gradient(
+        0deg,
+        rgba(0, 0, 0, 0.5),
+        rgba(0, 0, 0, 0.5)
+    ),
+    url("Media/HTML.jpg");
+    
+    }
+
+
+    #experience {
+        background-color: rgb(25, 24, 26);
+        color: rgb(255, 255, 255);
+        text-align: center;
+        }
+        #experience .container {
+            margin-top: 20px;
+            padding: 50px 12px;
+        }
+        #experience h2{
+        
+            margin-top: 0;
+            font-size: 2.8em;
+        
+        }
+        
+        #experience p {
+        
+            display: none;
+        
+        }
+        
+        #experience .card-experience {
+            background-position: center center;
+            background-size: cover;
+            padding: 50px 0px;
+            margin: 30px;
+            border-radius: 15px;
+        
+        }
+        
+        
+        .card-experience:first-child{
+            background-image: linear-gradient(
+            0deg,
+            rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, 0.5)
+        ),
+        url("Media/onlineseller.jpg");
+        
+        }
+        
+        
+        .card-experience:nth-child(2){
+            background-image: linear-gradient(
+            0deg,
+            rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, 0.5)
+        ),
+        url("Media/universityproject.jpg");
+        
+        }
+        
+            footer {
+
+                background-color: rgb (2.30,2.30,2.30);
+            }
+            footer p {
+                margin: 0;
+                padding: 12px;
+                color: rgb (100,100,100) ;
+            }
+
+            footer .container {
+                height: 150px;
+                display: flex;
+                justify-content: center;
+                align-items: flex-end;
+            }
+
+ @media (min-width: 720px) {
+
+   header {
+        position: fixed;
+        width: 100%;
+                }
+                header .container {
+                    flex-direction: row;
+                    justify-content: space-between;
+                }
+
+                header nav {
+                    flex-direction: row;
+                    padding-bottom: 0;
+                    padding-right: 20px;
+                }
+
+        #hero h1 {
+            font-size: 4.5em;
+                }
+
+        #aboutme .container {
+            display: flex;
+            justify-content: space-evenly;
+
+                }
+                #aboutme .texto {
+                    width: 50%;
+                    max-width: 600px;
+                    text-align: initial;
+                    padding-left: 30xp;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                   
+                }
+
+                #aboutme h2 {
+                    margin-top: 0px;
+                }
+
+                #aboutme .img-container {
+                    background-image: url("Media/camino.jpg");
+                    background-size: cover;
+                    background-position: center center;
+                    height: 500px;
+                    width: 400px;
+                }
+
+        #education .contenido {
+                    display: flex;
+                    justify-content: center;
+                    background-position: center center;
+                    background-size: cover;
+                    padding: 40px 0px;margin: 30px;
+                    border-radius: 15px
+                }
+
+                #education p{
+                    display: block;
+                    margin-bottom: 20px;
+                    margin-block-start: 50px;
+                    text-align: center;
+                    margin-left: 30px;
+                    margin-right: 30px;
+                }
+
+                #education h2 {
+                    margin-top: 50px;
+                }
+
+                #education h3 {
+                    margin-top: 0;
+                }
+
+                #education .card-education {
+                    max-width: 380px;
+                    padding: 20px;
+                    background-position: center center;
+                background-size: cover;
+                    padding: 50px 0px;
+                    margin: 10px;
+                    border-radius: 15px;
+                }
+                
+        #skill .contenido {
+            display: flex;
+            justify-content: center;
+            background-position: center center;
+            background-size: cover;
+            padding: 50px 0px;margin: 30px;
+            border-radius: 15px
+                }
+
+                #skill p{
+                    display: block;
+                    margin-bottom: 20px;
+                    margin-block-start: 50px;
+                    text-align: center;
+                    margin-left: 30px;
+                    margin-right: 30px;
+                }
+
+                #skill h3 {
+                    margin-top: 0;
+                }
+
+                #skill .card-skill {
+                    max-width: 400px;
+                    padding: 20px;
+                    background-position: center center;
+                background-size: cover;
+                    padding: 50px 0px;
+                    margin: 10px;
+                    border-radius: 15px;
+                    
+                }
+
+     #experience .contenido {
+        display: flex;
+        justify-content: center;
+        background-position: center center;
+        background-size: cover;
+        padding: 50px 0px;margin: 30px;
+        border-radius: 15px
+                }
+
+            #experience p{
+                    display: block;
+                    margin-bottom: 30px;
+                }
+
+            #experience h3 {
+                    margin-top: 0;
+                }
+
+            #experience .card-experience {
+                max-width: 600px;
+                padding: 20px;
+                background-position: center center;
+            background-size: cover;
+                padding: 50px 0px;
+                margin: 10px;
+                border-radius: 15px;
+                }
+
+    #contact .contenido {
+                    display: flex;
+                    justify-content: center;
+                }
+
+            #contact p{
+                    display: block;
+                    margin-bottom: 30px;
+                }
+
+            #contact h3 {
+                    margin-top: 0;
+                }
+
+            #contact .contact {
+                    padding: 50px;
+                }
+         
+            }
